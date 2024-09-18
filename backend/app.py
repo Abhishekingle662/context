@@ -45,7 +45,7 @@ def get_model_response(user_input, model_choice="openai", conversation_history=[
     global chat_history_summary, memory
     
     if model_choice.lower() == "openai":
-        llm = ChatOpenAI(model_name="gpt-4-0613", temperature=0)
+        llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0)
         
         # Check if the input is setting the name
         if "my name is" in user_input.lower():
